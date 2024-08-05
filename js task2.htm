@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      Bir <u>bərbər</u> bir <u>bərbərə</u> gəl <u>bərabər</u> bir
+      <u>bərbər</u> dükanı açaq demiş
+    </h1>
+
+    <script>
+      const ifade = document.querySelector("h1");
+      const cumle =
+        "Bir bərbər bir bərbərə gəl bərabər bir bərbər dükanı açaq demiş";
+      const soz = "bər";
+      let index = [];
+
+      for (let i = 0; i < cumle.length; i++) {
+        if (cumle.substr(i, soz.length) == soz) {
+          index.push(i);
+        }
+      }
+
+      console.log(index);
+    </script>
+  </body>
+</html>
